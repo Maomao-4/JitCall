@@ -1,0 +1,24 @@
+<div class="incoming-call-container">
+  <div class="caller-info">
+    <div class="avatar pulse">
+      <div class="avatar-circle large">
+        {{ getInitials(name) }}
+      </div>
+    </div>
+    <h2>{{ name }}</h2>
+    <p>Llamada entrante</p>
+  </div>
+
+  <div class="call-timer">
+    {{ callTimer }}
+  </div>
+
+  <div class="call-actions">
+    <ion-button (click)="dismiss()" color="danger" class="call-button reject">
+      <ion-icon name="call-outline" class="call-icon"></ion-icon>
+    </ion-button>
+    <ion-button (click)="answerCall()" color="success" class="call-button answer">
+      <ion-icon name="call-outline" class="call-icon"></ion-icon>
+    </ion-button>
+  </div>
+</div>

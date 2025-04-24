@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "192585614037",
+    "project_id": "jitcall-b4b0e",
+    "storage_bucket": "jitcall-b4b0e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192585614037:android:48316cbc5db21b2434585c",
+        "android_client_info": {
+          "package_name": "com.jitcall.notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192585614037-phsbo1marq8paa0ujsptns5jmvrok7n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTlVSe_kF6AbOcE7Q9LBvJEXJn3j4ixF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192585614037-phsbo1marq8paa0ujsptns5jmvrok7n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

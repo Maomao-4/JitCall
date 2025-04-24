@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agregar Contacto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Teléfono</ion-label>
+      <ion-input type="tel" formControlName="telefono"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" [disabled]="form.invalid">
+      Buscar y Agregar
+    </ion-button>
+  </form>
+</ion-content>

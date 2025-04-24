@@ -1,0 +1,78 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="toolbar-content">
+      <div class="app-title">
+        <ion-icon name="call"></ion-icon>
+        <span>CallJit</span>
+      </div>
+      <div class="toolbar-actions">
+        <ion-button fill="clear" (click)="goToAddContact()">
+          <ion-icon slot="icon-only" name="person-add-outline"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" (click)="goToSettings()">
+          <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" (click)="logout()">
+          <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="welcome-header fade-in">
+    <h2>Hola, {{ userName }}</h2>
+    <p>Bienvenido a tu lista de contactos</p>
+  </div>
+
+  <div class="search-bar fade-in">
+    <ion-searchbar placeholder="Buscar contactos" [(ngModel)]="searchTerm" (ionChange)="filterContacts()" animated></ion-searchbar>
+  </div>
+
+  <div class="contacts-container fade-in">
+    <ng-container *ngIf="filteredContacts.length > 0; else noContacts">
+      <div class="contacts-header">
+        <h3>Mis Contactos</h3>
+        <p>{{ filteredContacts.length }} contacto(s)</p>
+      </div>
+
+      <ion-list lines="none">
+        <ion-item *ngFor="let contact of filteredContacts" class="contact-item fade-in">
+          <div class="contact-avatar">
+            <div class="avatar-circle">
+              {{ getInitials(contact.nombre, contact.apellido) }}
+            </div>
+          </div>
+          <ion-label>
+            <h2>{{ contact.nombre }} {{ contact.apellido }}</h2>
+            <p>{{ contact.telefono }}</p>
+          </ion-label>
+          <ion-button fill="clear" (click)="onCall(contact)" class="call-button">
+            <ion-icon name="call-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </ng-container>
+
+    <ng-template #noContacts>
+      <div class="empty-state fade-in">
+        <ion-icon name="people-outline"></ion-icon>
+        <h3>No tienes contactos aún</h3>
+        <p>Agrega contactos para empezar a realizar llamadas</p>
+        <ion-button (click)="goToAddContact()">
+          <ion-icon name="person-add-outline" slot="start"></ion-icon>
+          Agregar contacto
+        </ion-button>
+      </div>
+    </ng-template>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="fab-button">
+    <ion-fab-button (click)="goToAddContact()">
+      <ion-icon name="person-add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+<ion-loading [isOpen]="isLoading" message="Iniciando llamada..."></ion-loading>
