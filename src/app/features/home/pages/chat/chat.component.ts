@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat.component.scss'],
   standalone: false,
 })
-export class ChatPage {
+export class ChatComponent {
   messages = [
     { from: 'other', text: '¡Hola!' },
     { from: 'me', text: '¡Hola! ¿Cómo estás?' },
