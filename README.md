@@ -10,21 +10,20 @@ Envío y recepción de notificaciones push utilizando servicios externos.
 
 Interfaz moderna y responsiva optimizada para dispositivos móviles.
 
-⚠️ Actualmente, la aplicación no cuenta con funcionalidad de videollamadas. Se considera una posible implementación futura.
+
 
 ## 🛠️ Tecnologías utilizadas
-Ionic Framework + Angular
-
-Firebase Authentication
-
-Firebase Firestore
-
-Firebase Cloud Messaging o servicios externos para notificaciones push
+- Frontend: Ionic Angular + CSS
+- Backend: TypeScript
+- Firebase Authentication
+- Firebase Firestore
+- Firebase Cloud Messaging o servicios externos para notificaciones push
 
 ## 📷 Capturas de pantalla (opcional)
 Puedes agregar capturas de pantalla de tu aplicación aquí para ilustrar su funcionamiento.
 
-## 🔧 Instalación y ejecución
-Clona el repositorio:
-
+## 📦 Instalación y Uso
+1. ```git clone https://github.com/Maomao-4/Parcial-1.git```
+2. ```npm install ```
+3. ```ionic serve```
 
