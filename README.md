@@ -2,14 +2,10 @@
 jitCall es una aplicación móvil desarrollada con Ionic + Angular que permite a los usuarios registrarse, iniciar sesión, gestionar sus contactos y recibir notificaciones push. Está integrada con Firebase para la autenticación y almacenamiento de datos, ofreciendo una experiencia rápida y confiable.
 
 ## 🚀 Características
-Registro e inicio de sesión con Firebase Authentication.
-
-Gestión de contactos personalizada usando Firebase Firestore.
-
-Envío y recepción de notificaciones push utilizando servicios externos.
-
-Interfaz moderna y responsiva optimizada para dispositivos móviles.
-
+- Registro e inicio de sesión con Firebase Authentication.
+- Gestión de contactos personalizada usando Firebase Firestore.
+- Envío y recepción de notificaciones push utilizando servicios externos.
+- Interfaz moderna y responsiva optimizada para dispositivos móviles.
 
 
 ## 🛠️ Tecnologías utilizadas
