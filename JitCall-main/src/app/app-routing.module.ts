@@ -15,6 +15,11 @@ const routes: Routes = [
     loadChildren: () => import("./features/settings/settings.module").then((m) => m.SettingsModule),
     canActivate: [AuthGuard],
   },
+  {
+    path: "chat",
+    loadChildren: () => import("./features/home/pages/chat/chat.module").then((m) => m.ChatModule),
+    canActivate: [AuthGuard],
+  }
 ]
 
 @NgModule({

@@ -21,9 +21,9 @@
 </ion-header>
 
 <ion-content>
-  <div class="welcome-header fade-in">
-    <h2>Hola, {{ userName }}</h2>
-    <p>Bienvenido a tu lista de contactos</p>
+  <div class="welcome-header fade-in title">
+    <h2> Hola, {{ userName }}</h2>
+    <p> Bienvenido a tu lista de contactos</p>
   </div>
 
   <div class="search-bar fade-in">
@@ -50,6 +50,9 @@
           </ion-label>
           <ion-button fill="clear" (click)="onCall(contact)" class="call-button">
             <ion-icon name="call-outline"></ion-icon>
+          </ion-button>
+          <ion-button fill="clear" (click)="onCall(contact)" class="">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
           </ion-button>
         </ion-item>
       </ion-list>

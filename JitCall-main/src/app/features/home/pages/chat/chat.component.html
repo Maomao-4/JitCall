@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Chat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="chat-container">
+    <div *ngFor="let message of messages" [ngClass]="{'message-row': true, 'me': message.from === 'me', 'other': message.from === 'other'}">
+      <div class="message-bubble">
+        {{ message.text }}
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-input [(ngModel)]="newMessage" placeholder="Escribe un mensaje..."></ion-input>
+      <ion-button slot="end" (click)="sendMessage()" fill="solid">Enviar</ion-button>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>
