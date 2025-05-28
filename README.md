@@ -19,8 +19,8 @@ Interfaz moderna y responsiva optimizada para dispositivos móviles.
 - Firebase Firestore
 - Firebase Cloud Messaging o servicios externos para notificaciones push
 
-## 📷 Capturas de pantalla (opcional)
-Puedes agregar capturas de pantalla de tu aplicación aquí para ilustrar su funcionamiento.
+## 📷 Capturas de pantalla 
+
 
 ## 📦 Instalación y Uso
 1. ```git clone https://github.com/Maomao-4/Parcial-1.git```
