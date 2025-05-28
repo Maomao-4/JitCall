@@ -17,6 +17,7 @@ jitCall es una aplicación móvil desarrollada con Ionic + Angular que permite a
 
 ## 📷 Capturas de pantalla 
 
+https://youtube.com/shorts/DREqDwOeHJ8
 
 ## 📦 Instalación y Uso
 1. ```git clone https://github.com/Maomao-4/Parcial-1.git```
